@@ -1,6 +1,6 @@
 var postedQuote = '';
 $(document).ready(function() {
-	$('#new-quote').on('click', function(e) {
+	$('#new-quote').on('touchstart click', function(e) {
 		e.preventDefault();
 		$.ajax({
 			url: 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=',

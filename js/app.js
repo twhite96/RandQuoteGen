@@ -1,6 +1,6 @@
 var postedQuote = '';
 $(document).ready(function() {
-	$('#new-quote').on('touchstart click', function(e) {
+	$('#new-quote').on('click', function(e) {
 		e.preventDefault();
 		$.ajax({
 			url: 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=',
@@ -24,6 +24,6 @@ $(document).ready(function() {
 		//We tell our browser not to follow that link
 		e.preventDefault();
 		//We get the URL of the link
-		window.open('https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=' + postedQuote)
+		window.open('https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=' + postedQuote);
 	});
 });

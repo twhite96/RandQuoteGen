@@ -3,7 +3,7 @@ $(document).ready(function() {
 	$('#new-quote').on('touchstart click', function(e) {
 		e.preventDefault();
 		$.ajax({
-			url: 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=',
+			url: 'https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=',
 			success: function(data) {
 				var post = data.shift(); // The data is an array of posts. Grab the first one.
 
@@ -24,6 +24,6 @@ $(document).ready(function() {
 		//We tell our browser not to follow that link
 		e.preventDefault();
 		//We get the URL of the link
-		window.open('https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=' + postedQuote);
+		window.open('https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=' + postedQuote)
 	});
 });

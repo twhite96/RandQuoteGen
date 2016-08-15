@@ -10,14 +10,7 @@ $(document).ready(function() {
 				$('p').html(post.content);
 				postedQuote = $(post.content)[0].innerText;
 
-				$('p').animate({
-          opacity: 0
-        }, 500,
-				function() {
-          $(this).animate({
-            opacity: 1
-          }, 500),
-			});
+				$('p').fadeIn(1000);
 				// If the Source is available, use it. Otherwise hide it.
 				if (typeof post.custom_meta !== 'undefined' && typeof post.custom_meta.Source !== 'undefined') {
 					$('#quote-source').html('Source: ' + post.custom_meta.Source);

@@ -10,7 +10,7 @@ $(document).ready(function() {
 				$('p').html(post.content);
 				postedQuote = $(post.content)[0].innerText;
 
-				$('p').fadeIn('slow');
+				$(postedQuote).fadeIn('slow');
 
 				// If the Source is available, use it. Otherwise hide it.
 				if (typeof post.custom_meta !== 'undefined' && typeof post.custom_meta.Source !== 'undefined') {

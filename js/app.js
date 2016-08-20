@@ -20,7 +20,7 @@ $(document).ready(function() {
        $quoteBox.fadeToggle('slow', function(){
          $(this).html(post.content);
          // Show source if available
-         if(post.custom_meta && post.custom_meta.Source.length > 0){
+         if(post.custom_meta > 0 && post.custom_meta.Source.length > 0){
            $('#quote-source').html('Source: ' + post.custom_meta.Source);
          }
        });

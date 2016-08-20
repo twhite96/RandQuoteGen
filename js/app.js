@@ -20,16 +20,13 @@ $(document).ready(function() {
 			var post = res.shift();
 			quoteBox.html(post.content);
 			// Now you can fade the js-quoteBox back into the DOM
-			quoteBox.fadeToggle(500, function(){
+			quoteBox.fadeIn(500, function(){
 				$(this).html(post.content);
 				// Show source if available
 				if(post.custom_meta && post.custom_meta.Source !== undefined){
 					$('#quote-source').html('Source: ' + post.custom_meta.Source);
-				} else {
-					$('#quote-source').text('');
 				}
-			}
-		);
+			});
 
 	});
 	$('#tweet-quote').on('click', function(e) {

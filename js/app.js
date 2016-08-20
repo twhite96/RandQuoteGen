@@ -26,6 +26,6 @@ $(document).ready(function() {
 		//We tell our browser not to follow that link
 		e.preventDefault();
 		//We get the URL of the link
-		window.open('https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=' + postedQuote)
+		window.open('https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=' + postedQuote);
 	});
 });

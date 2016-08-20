@@ -12,6 +12,10 @@ h1 {
   text-align: center;
 }
 
+.js-Quotebox {
+  display: none;
+}
+
 div {
   position: relative;
   z-index: 2;

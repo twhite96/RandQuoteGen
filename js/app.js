@@ -20,7 +20,7 @@ $(document).ready(function() {
 			var post = res.shift();
 			quoteBox.html(post.content);
 			// Now you can fade the js-quoteBox back into the DOM
-			quoteBox.fadeToggle('slow', function(){
+			quoteBox.fadeToggle(500, function(){
 				$(this).html(post.content);
 				// Show source if available
 				if(post.custom_meta && post.custom_meta.Source !== undefined){

@@ -23,8 +23,10 @@ $(document).ready(function() {
 			quoteBox.fadeToggle(1000, function(){
 				$(this).html(post.content);
 				// Show source if available
-				if(post.custom_meta !== undefined && post.custom_meta.Source !== undefined){
-					$('#quote-source').html('Source: ' + post.custom_meta.Source);
+				if (typeof post.custom_meta !== 'undefined' && typeof post.custom_meta.Source !== 'undefined') {
+          $('#quote-source').html('Source:' + post.custom_meta.Source);
+        } else {
+          $('#quote-source').text('');
 				}
 			});
 

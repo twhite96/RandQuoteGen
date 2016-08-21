@@ -23,7 +23,7 @@ $(document).ready(function() {
 			quoteBox.fadeToggle(1000, function(){
 				$(this).html(post.content);
 				// Show source if available
-				if(post.custom_meta && post.custom_meta.Source.length > 0){
+				if(post.custom_meta !== undefined && post.custom_meta.Source !== undefined){
 					$('#quote-source').html('Source: ' + post.custom_meta.Source);
 				}
 			});

@@ -18,7 +18,7 @@ $(document).ready(function() {
 		}).done(function(res){
 			// Use response here to modify the DOM
 			var post = res.shift();
-			quoteBox.html(post.content);
+			quoteBox.html(post.content)[0].innerText;
 			// Now you can fade the js-quoteBox back into the DOM
 			quoteBox.fadeToggle(1000, function(){
 				$(this).html(post.content);

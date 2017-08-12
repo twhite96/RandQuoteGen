@@ -19,7 +19,7 @@ div {
 
 body {
   background-color: #06D7D9;
-  color: #57DEBF;
+  color: #06D7D9;
   font-family: 'Droid+Sans', sans-serif;
   font-weight: 400;
 }
@@ -40,7 +40,7 @@ body {
 
 .quote-box {
   border-radius: 3px;
-  box-shadow: 1px 1px 1px 1px black;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
   position: relative;
   margin: 8% auto auto auto;
   width: 450px;
@@ -70,7 +70,7 @@ body {
   quotes: "“" "”" "‘" "’";
 }
 .quote-box blockquote:before {
-  color: #06D7D9;
+  color: #08D7D9;
   font-size: 4em;
   content: open-quote;
   line-height: 0.1em;
@@ -95,7 +95,7 @@ body {
   height: 38px;
   border: none;
   border-radius: 3px;
-  box-shadow: 1px 1px 1px 1px black;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.6);
   background-color: #06D7D9;
   color: #fff;
   outline: none;

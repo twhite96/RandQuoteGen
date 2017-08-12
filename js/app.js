@@ -3,7 +3,7 @@ var quoteBox = '';
 $(document).ready(function() {
 	$('#new-quote').on('touchstart click', function(e) {
 		e.preventDefault();
-		var url = 'https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=';
+		var url = 'https://crossorigin.me/https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=';
 
 		// Give the paragraph for quotes a class name to be precise
 		quoteBox = $('.js-quoteBox');
@@ -28,7 +28,7 @@ $(document).ready(function() {
 				} else {
 					$('#quote-source').text('');
 				}
-			})
+			});
 
 		});
 		$('#tweet-quote').on('click', function(e) {

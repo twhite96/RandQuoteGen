@@ -122,3 +122,7 @@ body {
   float: right;
   padding-top: 5px;
 }
+
+a:link {
+  text-decoration: underline;
+}

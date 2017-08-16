@@ -3,7 +3,7 @@ var quoteBox = '';
 $(document).ready(function() {
 	$('#new-quote').on('touchstart click', function(e) {
 		e.preventDefault();
-		var url = 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=';
+		var url = 'https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=';
 
 		// Give the paragraph for quotes a class name to be precise
 		quoteBox = $('.js-quoteBox');

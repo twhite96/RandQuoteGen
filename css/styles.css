@@ -128,10 +128,9 @@ a:link {
 }
 
 .buttons {
-  transition: all ease 0.3s;
+   transition: all 0.3s ease;
 }
 
 .buttons:active {
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.6);
-  top: 3px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 }

@@ -126,3 +126,12 @@ body {
 a:link {
   text-decoration: underline;
 }
+
+.buttons {
+  transition: all ease 0.3s;
+}
+
+.buttons:active {
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.6);
+  top: 3px;
+}

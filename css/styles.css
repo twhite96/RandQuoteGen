@@ -91,7 +91,7 @@ body {
   margin: auto;
   display: block;
 }
-.quote-box .buttons .btn {
+.quote-box {
   height: 38px;
   border: none;
   border-radius: 3px;

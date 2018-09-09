@@ -1,10 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,500);
 * {
-  margin: 0;
+  margin-left:auto;
+  margin-right:auto;
   padding: 0;
   list-style: none;
   vertical-align: baseline;
 }
+
 h1 {
   color: #fff;
   text-align: center;

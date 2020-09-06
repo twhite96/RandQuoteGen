@@ -17,7 +17,7 @@ div {
 }
 body {
   background-color: #06d7d9;
-  color: #06d7d9;
+  color: #323332;
   font-family: 'Droid+Sans', sans-serif;
   font-weight: 400;
 }
@@ -36,7 +36,9 @@ body {
 }
 .quote-box {
   border-radius: 3px;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 10px 10px 140px -13px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 140px -13px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 140px -13px rgba(0,0,0,0.75);
   position: relative;
   margin: 8% auto auto auto;
   width: 450px;
@@ -47,10 +49,11 @@ body {
 .quote-box .quote-text {
   text-align: center;
   width: 450px;
-  height: auto;
+  height: 100px;
   clear: both;
   font-weight: 500;
   font-size: 1.75em;
+  transition: height 0.66s ease-out;
 }
 .quote-box .quote-text i {
   text-align: center;
@@ -91,7 +94,6 @@ body {
   height: 38px;
   border: none;
   border-radius: 7px;
-  box-shadow: 0 5px #00a4a6;
   background-color: #06d7d9;
   color: #fff;
   outline: none;
@@ -102,6 +104,7 @@ body {
   cursor: pointer;
   position: relative;
 }
+
 .quote-box .buttons .btn:active {
   box-shadow: 0 0 #00a4a6;
   transition: all 0.3s ease;
@@ -129,4 +132,11 @@ body {
 }
 a:link {
   text-decoration: underline;
+}
+
+span {
+	text-align: center;
+  margin: 40px 20px;
+	height: 0;
+  transition: height 0.66s ease-out;
 }

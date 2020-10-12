@@ -36,9 +36,9 @@ body {
 }
 .quote-box {
   border-radius: 3px;
-  -webkit-box-shadow: 10px 10px 140px -13px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 140px -13px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 140px -13px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 7px 18px 56px -27px rgba(0,0,0,0.75);
+  -moz-box-shadow: 7px 18px 56px -27px rgba(0,0,0,0.75);
+  box-shadow: 7px 18px 56px -27px rgba(0,0,0,0.75);
   position: relative;
   margin: 8% auto auto auto;
   width: 450px;
